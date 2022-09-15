@@ -1,3 +1,34 @@
+<?php
+require "dbBroker.php";
+require "models/pacijent.php";
+
+session_start();
+if (isset($_POST['korisnickoIme']) && isset($_POST['lozinka'])) {
+    $uname = $_POST['korisnickoIme'];
+    $upass = $_POST['lozinka'];
+
+    $pacijent = new Pacijent(1, $uname, $upass);
+
+    $odg = Pacijent::logInUser($pacijent, $conn);
+    if ($odg->num_rows == 1) {
+        echo  `
+        <script>
+        console.log( "Uspešno prijavljivanje");
+        </script> `;
+        $_SESSION['user_id'] = $pacijent->id;
+        header('Location: home.php');
+        exit();
+    } else {
+        echo `
+        <script>
+        console.log( "Neuspešno prijavljivanje!");
+        </script>
+        `;
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
