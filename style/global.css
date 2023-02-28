@@ -1,0 +1,14 @@
+body {
+  background-image: url("https://laredomac.com/resources/colores_claros.jpeg");
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/002/065/947/original/abstract-studio-backdrop-white-and-gray-background-illustration-vector.jpg"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(51, 122, 183);
+  font-size: 50px;
+  margin-bottom: 20px;
+}

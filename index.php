@@ -56,7 +56,7 @@ if (isset($_POST['korisnickoIme']) && isset($_POST['lozinka'])) {
                         <div class="col-lg-6">
                             <div class="form-floating mb-3">
                                 <input type="text" name="korisnickoIme" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                                <label for="floatingInput">Korisnicko ime</label>
+                                <label for="floatingInput">Korisničko ime</label>
                             </div>
                         </div>
                     </div>
@@ -79,6 +79,7 @@ if (isset($_POST['korisnickoIme']) && isset($_POST['lozinka'])) {
                 </div>
         </div>
     </div>
+
 
 </body>
 

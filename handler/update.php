@@ -16,3 +16,5 @@ if(isset($_POST['id']) && isset($_POST['naziv']) && isset($_POST['ambulanta'])
         echo "Failed";
     }
 }
+
+?>

@@ -21,7 +21,6 @@ if ($podaci->num_rows == 0) {
 
 ?>
 
-
     <style>
         body {
             background-image: url("https://img.freepik.com/free-vector/diagonal-motion-lines-white-background_1017-33198.jpg?w=2000");
@@ -71,6 +70,7 @@ if ($podaci->num_rows == 0) {
 
                 </thead>
                 <tbody>
+
                     <?php
                     while ($red = $podaci->fetch_array()) :
                     ?>
@@ -91,6 +91,7 @@ if ($podaci->num_rows == 0) {
                 <?php
                     endwhile;
                 } ?>
+
                 </tbody>
             </table>
 

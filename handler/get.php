@@ -7,3 +7,6 @@ if(isset($_POST['id'])){
     $myArray = Usluga::getById($_POST['id'], $conn);
     echo json_encode($myArray);
 }
+
+
+?>
