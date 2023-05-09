@@ -17,10 +17,10 @@ $("#dodajForm").submit(function () {
   req.done(function (res, textStatus, jqXHR) {
     if (res == "Success") {
       alert("Pregled je uspešno zakazan!");
-      console.log("Dodat je novi pregled!");
       location.reload(true);
-    } else console.log("Pregled nije dodat " + res);
-    alert("Neuspešno zakazivanje pregleda!");
+    } else {
+      alert("Neuspešno zakazivanje pregleda!");
+    }
     console.log(res);
   });
 

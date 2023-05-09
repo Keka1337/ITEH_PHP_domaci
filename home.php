@@ -119,24 +119,24 @@ if ($podaci->num_rows == 0) {
                                     <div class="col-md-11 ">
                                         <div class="form-group">
                                             <label for="">Vrsta intervencije</label>
-                                            <input type="text" style="border: 1px solid black; width: 350px;" name="naziv" class="form-control" />
+                                            <input type="text" style="border: 1px solid black; width: 350px;" name="naziv" class="form-control" required/>
                                         </div>
                                         <div class="form-group">
                                             <label for="">Ambulanta</label>
-                                            <input type="text" style="border: 1px solid black;width: 350px; " name="sala" class="form-control" />
+                                            <input type="text" style="border: 1px solid black;width: 350px; " name="ambulanta" class="form-control" required/>
                                         </div>
                                         <div class="form-group">
                                             <label for="ambulanta">Cena</label>
-                                            <input type="number" style="border: 1px solid black; width: 350px; " name="cena" class="form-control" />
+                                            <input type="number" style="border: 1px solid black; width: 350px; " name="cena" class="form-control" required/>
                                         </div>
                                         <div class="form-group">
                                             <label for="ambulanta">ID pacijenta</label>
-                                            <input type="number" style="border: 1px solid black; width: 350px; " name="pacijentId" class="form-control" />
+                                            <input type="number" style="border: 1px solid black; width: 350px; " name="pacijentId" class="form-control" required/>
                                         </div>
                                         <!-- <div class="col-md-12"> -->
                                         <div class="form-group">
                                             <label for="">Datum</label>
-                                            <input type="date" style="border: 1px solid black; width: 350px; " name="datum" class="form-control" />
+                                            <input type="date" style="border: 1px solid black; width: 350px; " name="datum" class="form-control" required/>
                                         </div>
                                         <!-- </div> -->
                                         <div class="form-group">
@@ -213,7 +213,7 @@ if ($podaci->num_rows == 0) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/pregledi.js"></script>
+        <script src="js/pregled.js"></script>
 
     </body>
 
